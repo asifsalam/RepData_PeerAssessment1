@@ -1,8 +1,7 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
+output: html_document
+keep_md: true
 ---
 
 
@@ -12,62 +11,10 @@ The following code loads necessary libraries and reads in the data:
 
 ```r
 require(plyr,quietly=TRUE)
-```
-
-```
-## Warning: package 'plyr' was built under R version 3.1.1
-```
-
-```r
 require(dplyr,quietly=TRUE)
-```
-
-```
-## Warning: package 'dplyr' was built under R version 3.1.1
-```
-
-```
-## 
-## Attaching package: 'dplyr'
-## 
-## The following objects are masked from 'package:plyr':
-## 
-##     arrange, desc, failwith, id, mutate, summarise, summarize
-## 
-## The following objects are masked from 'package:stats':
-## 
-##     filter, lag
-## 
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-```
-
-```r
 require(tidyr,quietly=TRUE)
-```
-
-```
-## Warning: package 'tidyr' was built under R version 3.1.1
-```
-
-```r
 require(ggplot2,quietly=TRUE)
-```
-
-```
-## Warning: package 'ggplot2' was built under R version 3.1.1
-```
-
-```r
 require(xtable,quietly=TRUE)
-```
-
-```
-## Warning: package 'xtable' was built under R version 3.1.2
-```
-
-```r
 file_name <- "activity.csv"
 activity_data <- read.csv(file_name,colClasses=c("integer","character","integer"),stringsAsFactors=FALSE)
 activity_data$date <- as.Date(activity_data$date)
@@ -81,7 +28,7 @@ and have 3 observations.
 
 ## What is mean total number of steps taken per day?
 For this the data has to be summarised by day, and then the mean ascertained.  Days with no data are removed.
-**I use dplyr, tidyr for data manipulation and ggplot2 for plotting.**  
+**I have used dplyr, tidyr for data manipulation and ggplot2 for plotting.**  
 
 1. Make a histogram of the total number of steps taken each day
 

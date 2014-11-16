@@ -1,8 +1,7 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
+output: html_document
+keep_md: true
 ---
 
 
@@ -28,7 +27,7 @@ and have `r ncol(activity_data)` observations.
 
 ## What is mean total number of steps taken per day?
 For this the data has to be summarised by day, and then the mean ascertained.  Days with no data are removed.
-**I use dplyr, tidyr for data manipulation and ggplot2 for plotting.**  
+**I have used dplyr, tidyr for data manipulation and ggplot2 for plotting.**  
 
 1. Make a histogram of the total number of steps taken each day
 ```{r nstepsplot,fig.height=4,fig.width=8}
