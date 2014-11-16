@@ -23,7 +23,7 @@ activity_data$date <- as.Date(activity_data$date)
 The data contain the following variables:
 steps, date, interval
 
-and have 3 observations.
+and have 17568 observations.
 
 
 ## What is mean total number of steps taken per day?
